@@ -1,0 +1,68 @@
+.featurecardv2-ctn {
+    height: 164px;
+    width: clamp(240px, 100%, 30em);
+    background-size: clamp(240px, 100%, 25em);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: all 250ms ease-in-out
+}
+
+.featurecardv2-ctn:hover {
+    background-size: 90%;
+}
+
+
+
+.featurecardv2-ctn .contact {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.contact-btn:hover {
+    background-color: #2e2e2e;
+    color: rgb(196, 178, 130);
+    border: none
+}
+
+.contact-btn {
+    padding: 1em 3em;
+    border: 3px solid white;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 250ms ease-in-out;
+    cursor: pointer
+}
+
+.featurecardv2-ctn a {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.featurecardv2-ctn .element {
+    position: absolute;
+    font-size: 12em;
+    font-weight: bold;
+    color: #caaf86;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+
+@media (min-width: 1000px) {
+    .featurecardv2-ctn {
+        background-size: 75%;
+    }
+}

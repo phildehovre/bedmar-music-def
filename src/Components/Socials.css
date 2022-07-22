@@ -1,0 +1,32 @@
+.socials-ctn {
+    width: 100%;
+    height: 100%;
+    padding: 0 .2em;
+    display: flex;
+    align-items: center;
+}
+
+.socials-ctn>a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0 .2em;
+    transition: all 250ms ease-in-out
+}
+
+.socials-ctn>a:hover {
+    color: grey
+}
+
+@media (min-width: 1000px) {
+    .socials-ctn {
+        width: 25%;
+    }
+
+    .socials-ctn>a {
+        padding: 0 1em;
+    }
+
+    .socials-ctn.wide {
+        width: 100%;
+    }
+}

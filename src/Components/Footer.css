@@ -1,0 +1,174 @@
+.footer-ctn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #ffffff !important;
+}
+
+.footer-tagline-ctn {
+    width: clamp(300px, 400px, 100%);
+    margin: auto
+}
+
+.footer-ctn .title {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0;
+    height: fit-content !important;
+}
+
+.footer-ctn .subtitle {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff !important;
+    font-size: 1.3em
+}
+
+.footer-ctn .copyright {
+    color: grey;
+    font-size: .55em
+}
+
+
+.footer-ctn .details {
+    font-size: .60em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-ctn>.flex-wrapper {
+    /* width: 100%;
+    height: 4.5em; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.footer-ctn .address {
+    line-height: 1.5em;
+    font-size: .9em;
+    width: 100%;
+    text-align: center;
+}
+
+
+.footer-ctn .footer-img-ctn {
+    /* height: 100px; */
+    width: 165px;
+    background-image: url('https://res.cloudinary.com/dtnif6mzm/image/upload/v1656595874/Bedmar%20Music/mobile/MMF_logo_zqjvnq.png');
+    background-size: 125%;
+    /* margin-top: 1em; */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30%;
+    /* border: 1px solid red; */
+
+}
+
+.footer-ctn .address>a {
+    text-decoration: none;
+    color: inherit;
+    text-decoration: underline;
+    z-index: 10;
+
+}
+
+.footer-ctn .element {
+    background-color: #BCA37D;
+    height: 1px;
+    color: #BCA37D;
+    margin: 0.2em 1em;
+}
+
+@media (min-width: 1000px) {
+    .footer-ctn {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        margin: auto;
+    }
+
+    .footer-tagline-ctn {
+        width: 35%;
+        font-size: .8em;
+
+
+
+    }
+
+    .footer-ctn .details {
+        display: flex;
+        flex-direction: column;
+        color: rgb(255, 255, 255);
+        font-size: .8em;
+        font-weight: bold;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 55%;
+    }
+
+
+    .footer-ctn .address {
+        font-weight: normal;
+        text-align: center;
+        color: inherit;
+        width: 100%;
+        line-height: 1.5em;
+        font-size: .9em;
+        width: 100%;
+    }
+
+    .footer-ctn>.flex-wrapper {
+        width: 33%;
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .footer-ctn .img-ctn {
+
+        width: 33%;
+    }
+
+    .footer-ctn .img {
+        height: 100%;
+        width: 100%;
+        background-size: 150%;
+        background-position-y: center;
+        /* border: 1px solid red; */
+    }
+
+    .footer-ctn .address>a {
+        text-decoration: none;
+        color: inherit;
+        text-decoration: underline;
+
+    }
+
+
+
+    .footer-ctn>.socials-ctn {
+        /* width: ; */
+        color: white !important;
+        z-index: 10;
+    }
+}
+
+
+@media (min-width: 1400px) {
+    .footer-ctn {
+        margin: auto;
+        max-width: 1200px;
+    }
+}

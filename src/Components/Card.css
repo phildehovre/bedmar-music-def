@@ -1,0 +1,26 @@
+.card-ctn {
+    width: clamp(240px, 100%, 30em);
+    padding: 3em 10em 3em 1em;
+    height: 89px;
+    margin: .5em 0;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    text-align: left;
+    transition: all 250ms ease-in-out;
+}
+
+.card-ctn.hover {
+    background-color: #BCA37D;
+    color: #2E2E2E !important;
+}
+
+@media (min-width: 1000px) {
+
+    .card-ctn {
+        padding: 4em 5em .5em .5em;
+        margin: 0;
+        font-size: 1.6em;
+        height: fit-content
+    }
+}

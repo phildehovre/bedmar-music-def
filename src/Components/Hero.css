@@ -1,0 +1,166 @@
+.hero-ctn {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-ctn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 110%;
+    background-size: cover;
+    /* border: 1px solid red; */
+    /* background-size: 450%; */
+    background-image: url('https://res.cloudinary.com/dtnif6mzm/image/upload/v1656334495/Bedmar%20Music/pexels-wendy-wei-1916824_sj6add.jpg');
+    z-index: -1;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-position-x: -50vw;
+
+}
+
+.tagline-ctn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    height: 60%;
+    width: clamp(300px, 100vw, 50%);
+    font-weight: bold;
+    font-size: clamp(15px, 1.2em, 1.7em)
+}
+
+.tagline-ctn .title {
+    /* font-size: 1.3em; */
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.tagline-ctn .visual-element {
+    display: flex;
+    height: 1px;
+    width: 90%;
+    margin: 0em 1.5em;
+    transform: scale(100%);
+    border-bottom: 1px solid #BCA37D;
+    transition: transform 250ms linear;
+    transform-origin: left;
+}
+
+.tagline-ctn .visual-element.animate {
+    transform: scale(0%);
+    transform-origin: left;
+}
+
+.tagline-ctn .subtitle {
+    text-transform: uppercase;
+    font-size: 1.3em;
+    padding-left: -2em;
+    margin-top: .7em
+}
+
+.tagline-ctn>.content {
+    font-size: 1.2em;
+    padding: 3em 0;
+    height: 30%;
+}
+
+.tagline-ctn .cta-ctn {
+    width: 100%;
+    align-items: left;
+    margin-top: 5em;
+}
+
+
+@media (min-width: 1000px) {
+
+    .hero-ctn {
+        height: 100%;
+        width: 100%;
+        /* border: 1px solid red; */
+        display: grid;
+        grid-template-columns: 100% 1fr;
+    }
+
+    .hero-ctn::before {
+        height: 100%;
+        width: 100%;
+        background-image: url('https://res.cloudinary.com/dtnif6mzm/image/upload/c_crop,g_custom,h_2590,w_3832,x_743/v1656334495/Bedmar%20Music/pexels-wendy-wei-1916824_sj6add.jpg');
+        background-position: center;
+        background-position-x: 0em;
+        background-size: cover;
+
+    }
+
+    .tagline-ctn {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+        color: white;
+        height: 80%;
+        width: 50%;
+        font-weight: bold;
+        /* border: 1px solid red; */
+        font-size: 1.7em;
+    }
+
+    .tagline-ctn .title {
+        font-size: 1.3em;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .tagline-ctn .visual-element {
+        display: flex;
+        height: 1px;
+        width: 90%;
+        margin: 0em 1.5em;
+        /* transform: translateX(0%); */
+        transition: all 350ms linear;
+    }
+
+    .tagline-ctn .visual-element.animate {
+        /* transform: translateX(-200%) */
+    }
+
+    .tagline-ctn .subtitle {
+        text-transform: uppercase;
+        font-size: 1.3em;
+        padding-left: -2em;
+        margin-top: .7em
+    }
+
+    .tagline-ctn .content {
+        display: none;
+        font-size: 1.3em;
+        padding: 3em 0;
+        height: 30%;
+    }
+
+    .tagline-ctn .cta-ctn {
+        display: none;
+        width: 100%;
+        align-items: left;
+        margin-top: 5em;
+    }
+}
+
+
+@media (min-width: 1000px) {
+    .hero-ctn {
+        max-width: 1200px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .hero-ctn {
+        margin: auto
+    }
+}

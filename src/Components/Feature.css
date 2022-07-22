@@ -1,0 +1,22 @@
+.feature-ctn {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 1000px) {
+    .feature-ctn {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 1200px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .feature-ctn {
+        margin: auto
+    }
+}

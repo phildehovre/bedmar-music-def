@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+.navbar-ctn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    align-items: center;
+    padding: 0 .4em;
+    height: 3.5em;
+    /* border: 1px solid red; */
+}
+
+.navbar-ctn ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    height: 100%;
+    width: 100%;
+}
+
+.navbar-ctn ul li {
+    display: flex;
+    width: clamp(2em, 10em, 10%);
+    justify-content: center;
+}
+
+
+.navbar-link {
+    position: relative;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: white;
+    letter-spacing: .1em;
+    transition: ease-in-out all 250ms;
+}
+
+.navbar-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in-out;
+}
+
+
+.navbar-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.logo-ctn {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    background-image: url('https://res.cloudinary.com/dtnif6mzm/image/upload/v1658315390/Bedmar%20Music/BEDMAR_MUSIC_NEW_LOGO_2_idqq97.png');
+    background-size: 85%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.navbar-socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-right: 2em; */
+}
+
+.navbar-socials>a {
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+}
+
+@media (min-width: 800px) {
+    .navbar-ctn {
+        height: 5em;
+        text-transform: uppercase;
+        margin: auto;
+    }
+
+
+    .navbar-ctn ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        list-style: none;
+        height: 100%;
+        width: 100%;
+        padding: 0 5em;
+    }
+
+    .navbar-link {
+        font-size: 1em;
+    }
+
+    .logo-ctn {
+        /* height: 75px; */
+        /* width: 10%; */
+        display: flex;
+        align-items: left;
+        justify-content: left;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        /* background-image: url('https://res.cloudinary.com/dtnif6mzm/image/upload/v1658315390/Bedmar%20Music/BEDMAR_MUSIC_NEW_LOGO_2_idqq97.png'); */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: cover;
+        background-color: transparent;
+        /* border-radius: 0%; */
+        height: 100%;
+        width: 10em;
+    }
+}
+
+
+@media (min-width: 1000px) {
+    .navbar-ctn {
+        max-width: 1200px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .navbar-ctn {
+        margin: auto
+    }
+}

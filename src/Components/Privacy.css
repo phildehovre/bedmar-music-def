@@ -1,0 +1,36 @@
+.privacy-ctn {
+    width: clamp(90%, 750px, 75vw);
+    margin: auto;
+    font-size: .75em;
+}
+
+.privacy-ctn>h1,
+.privacy-ctn>h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.privacy-ctn>ol {
+    margin: 1em;
+}
+
+.privacy-ctn>ol>li {
+    padding: 1em 0;
+}
+
+.privacy-ctn>ol>li>ul {
+    list-style: none;
+    margin: 0 1em;
+}
+
+.privacy-ctn>ol>li>ul>li {
+    padding: .5em 0;
+}
+
+@media (min-width: 800px) {
+    .privacy-ctn {
+        width: clamp(90%, 750px, 75vw);
+        margin: auto;
+        font-size: 1em;
+    }
+}
