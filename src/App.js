@@ -51,7 +51,16 @@ function App() {
 
   return (
     <div className="App">
-      <CookieConsent>This website uses cookies to improve user experience</CookieConsent>
+      <CookieConsent
+        flipButtons
+        enableDeclineButton
+        buttonStyle={{
+          background: secondary,
+          color: "white",
+        }}
+        overlay
+      // location="middle"
+      >By using our website you agree to the use of Cookies to help ensure the site runs smoothly. </CookieConsent>
       <Router>
         <Menu
           text={primaryText}
