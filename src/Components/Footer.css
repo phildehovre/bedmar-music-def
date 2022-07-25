@@ -99,9 +99,6 @@
     .footer-tagline-ctn {
         width: 35%;
         font-size: .8em;
-
-
-
     }
 
     .footer-ctn .details {
@@ -127,17 +124,17 @@
         width: 100%;
     }
 
-    .footer-ctn>.flex-wrapper {
+    /* .footer-ctn>.flex-wrapper {
+        display: none;
         width: 33%;
         height: 10vh;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
-    }
+    } */
 
     .footer-ctn .img-ctn {
-
         width: 33%;
     }
 
@@ -146,7 +143,6 @@
         width: 100%;
         background-size: 150%;
         background-position-y: center;
-        /* border: 1px solid red; */
     }
 
     .footer-ctn .address>a {
@@ -171,4 +167,9 @@
         margin: auto;
         max-width: 1200px;
     }
+
+    .footer-ctn .img {
+        height: 100%;
+    }
+
 }
