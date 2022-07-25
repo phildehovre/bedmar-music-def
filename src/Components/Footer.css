@@ -93,7 +93,6 @@
         justify-content: space-between;
         align-items: center;
         height: 100%;
-        margin: auto;
     }
 
     .footer-tagline-ctn {
@@ -134,15 +133,13 @@
         justify-content: space-evenly;
     } */
 
-    .footer-ctn .img-ctn {
-        width: 33%;
+    .footer-img-ctn {
+        min-height: 70px;
     }
 
     .footer-ctn .img {
-        height: 100%;
         width: 100%;
-        background-size: 150%;
-        background-position-y: center;
+        /* background-size: 130%; */
     }
 
     .footer-ctn .address>a {
@@ -166,9 +163,17 @@
     .footer-ctn {
         margin: auto;
         max-width: 1200px;
+
+
+    }
+
+    .footer-img-ctn {
+        /* border: 1px solid red; */
+        min-height: 100px;
     }
 
     .footer-ctn .img {
+        /* border: 1px solid red; */
         height: 100%;
     }
 
