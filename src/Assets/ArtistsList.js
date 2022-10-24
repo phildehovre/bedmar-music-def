@@ -6,7 +6,7 @@ const ArtistsList = [
         imgLg: 'https://res.cloudinary.com/dtnif6mzm/image/upload/v1656595669/Bedmar%20Music/desktop/SkinnyLiving_rs2wwv.png',
         desc: 'This is a description of the artist that is pictured behind this useless text',
         imgZoom: '80%',
-        url: 'https://open.spotify.com/artist/405DvLr0FOuOWYgCt0emff?si=hcj-WIo7SCKHs5EiDHQmOA '
+        url: 'https://skinnyliving.co.uk'
     },
     {
         name: 'David King',
@@ -28,7 +28,7 @@ const ArtistsList = [
     },
     {
         name: 'Angus Parkin',
-        type: 'Singer / Songwriter / Musical Director',
+        type: 'Producer / Songwriter / Musical Director',
         img: 'https://res.cloudinary.com/dtnif6mzm/image/upload/v1656595318/Bedmar%20Music/mobile/AngusParkin_v3z5qb.png',
         imgLg: 'https://res.cloudinary.com/dtnif6mzm/image/upload/v1656595668/Bedmar%20Music/desktop/AngusParkin_lgu5dg.png',
         desc: 'This is a description of the artist that is pictured behind this useless text',

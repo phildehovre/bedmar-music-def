@@ -83,7 +83,7 @@ function Homepage(props) {
                     [
                         {
                             // name: 'exit [Live]',
-                            url: 'https://exit.live/',
+                            url: 'https://startupsmagazine.co.uk/article-meet-exit-live-tool-artists-monetise-live-show-recordings',
                             img: 'https://res.cloudinary.com/dtnif6mzm/image/upload/v1657719318/Bedmar%20Music/desktop/exitlive-grey_krc50n.png',
                             bg: tertiary
                         },
