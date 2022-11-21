@@ -18,13 +18,13 @@ const ArtistsList = [
         url: 'https://www.instagram.com/davidluciusking/ '
     },
     {
-        name: 'jem',
+        name: 'Nadia Sheikh',
         type: 'Singer / Songwriter',
-        img: 'https://res.cloudinary.com/dtnif6mzm/image/upload/v1656761500/Bedmar%20Music/mobile/jem_ureter.png',
-        imgLg: 'https://res.cloudinary.com/dtnif6mzm/image/upload/v1656595669/Bedmar%20Music/desktop/jem_xhyxre.png',
+        img: 'https://res.cloudinary.com/dtnif6mzm/image/upload/v1669028935/Bedmar%20Music/desktop/Nadia_z2hc4p.png',
+        imgLg: 'https://res.cloudinary.com/dtnif6mzm/image/upload/v1669028935/Bedmar%20Music/desktop/Nadia_z2hc4p.png',
         desc: 'This is a description of the artist that is pictured behind this useless text',
         imgZoom: '100%',
-        url: 'https://www.instagram.com/iamjemking/'
+        url: 'https://www.nadiasheikh.com'
     },
     {
         name: 'Angus Parkin',
