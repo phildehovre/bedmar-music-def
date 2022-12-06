@@ -29,7 +29,7 @@ const ArtistsList = [
     {
         name: 'Angus Parkin',
         type: 'Producer / Songwriter / Musical Director',
-        img: 'https://res.cloudinary.com/dtnif6mzm/image/upload/v1656595318/Bedmar%20Music/mobile/AngusParkin_v3z5qb.png',
+        img: 'https://res.cloudinary.com/dtnif6mzm/image/upload/v1670329739/Bedmar%20Music/AngusParkin_mrzqik.png',
         imgLg: 'https://res.cloudinary.com/dtnif6mzm/image/upload/v1656595668/Bedmar%20Music/desktop/AngusParkin_lgu5dg.png',
         desc: 'This is a description of the artist that is pictured behind this useless text',
         imgZoom: '100%',
