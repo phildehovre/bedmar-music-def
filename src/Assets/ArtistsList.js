@@ -8,14 +8,23 @@ const ArtistsList = [
         imgZoom: '80%',
         url: 'https://skinnyliving.co.uk'
     },
+    // {
+    //     name: 'David King',
+    //     type: 'Producer / Songwriter',
+    //     img: 'https://res.cloudinary.com/dtnif6mzm/image/upload/v1656595318/Bedmar%20Music/mobile/DavidKing_yzjzqc.png',
+    //     imgLg: 'https://res.cloudinary.com/dtnif6mzm/image/upload/v1656595669/Bedmar%20Music/desktop/DavidKing_srme4k.png',
+    //     desc: 'This is a description of the artist that is pictured behind this useless text',
+    //     imgZoom: '110%',
+    //     url: 'https://www.instagram.com/davidluciusking/ '
+    // },
     {
-        name: 'David King',
-        type: 'Producer / Songwriter',
-        img: 'https://res.cloudinary.com/dtnif6mzm/image/upload/v1656595318/Bedmar%20Music/mobile/DavidKing_yzjzqc.png',
-        imgLg: 'https://res.cloudinary.com/dtnif6mzm/image/upload/v1656595669/Bedmar%20Music/desktop/DavidKing_srme4k.png',
+        name: 'Michael Blackwell',
+        type: 'Singer / Songwriter',
+        img: 'https://res.cloudinary.com/dtnif6mzm/image/upload/v1678280076/Bedmar%20Music/Michael_Blackwell_2748_ojidrq.png',
+        imgLg: 'https://res.cloudinary.com/dtnif6mzm/image/upload/v1678280076/Bedmar%20Music/Michael_Blackwell_2748_ojidrq.png',
         desc: 'This is a description of the artist that is pictured behind this useless text',
         imgZoom: '110%',
-        url: 'https://www.instagram.com/davidluciusking/ '
+        url: 'https://michaelblackwell.co.uk/'
     },
     {
         name: 'Nadia Sheikh',
