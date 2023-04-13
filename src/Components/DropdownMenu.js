@@ -20,8 +20,8 @@ const DropdownMenu = (props) => {
             {isOpen &&
                 <div className={`dropdown${isOpen ? ' open' : ''} `}>
                     <li style={{ color: '#BCA37D' }} onClick={() => { scrollToSection('#home') }}>Home</li>
-                    <li onClick={() => { scrollToSection('#artists') }}>Artists</li>
-                    <li onClick={() => { scrollToSection('#businesses') }}>Businesses</li>
+                    <li onClick={() => { scrollToSection('#artists') }}>Roster</li>
+                    {/* <li onClick={() => { scrollToSection('#businesses') }}>Businesses</li> */}
                     <li onClick={() => { scrollToSection('#about') }}>About</li>
                     <li onClick={() => { scrollToSection('#contact') }}>Contact</li>
                 </div>

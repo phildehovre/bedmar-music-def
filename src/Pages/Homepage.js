@@ -63,7 +63,7 @@ function Homepage(props) {
                 height='fit-content'
                 bg={background}
                 title='Who we do it for'
-                category='artists'
+                category='roster'
                 textAlign='left'
                 text={secondary}
                 features={ArtistsList}
@@ -71,7 +71,7 @@ function Homepage(props) {
                 overlay={secondary}
                 isSmallScreen={isSmallScreen}
             />
-            <Feature
+            {/* <Feature
                 id='businesses'
                 height='fit-content'
                 bg={background}
@@ -103,7 +103,7 @@ function Homepage(props) {
                 }
                 themeColor='black'
                 isSmallScreen={isSmallScreen}
-            />
+            /> */}
             <Feature2
                 id='about'
                 height='fit-content'

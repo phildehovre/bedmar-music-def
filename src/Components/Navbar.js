@@ -30,11 +30,11 @@ function Navbar(props) {
                         <Link className='navbar-link' to="/">Home</Link>
                     </li>
                     <li onClick={() => { scrollToSection('#artists') }}>
-                        <Link className='navbar-link' to="#artists">Artists</Link>
+                        <Link className='navbar-link' to="#artists">Roster</Link>
                     </li>
-                    <li onClick={() => { scrollToSection('#businesses') }}>
+                    {/* <li onClick={() => { scrollToSection('#businesses') }}>
                         <Link className='navbar-link' to="">Businesses</Link>
-                    </li>
+                    </li> */}
                     <li onClick={() => { scrollToSection('#about') }}>
                         <Link className='navbar-link' to="">About</Link>
                     </li>

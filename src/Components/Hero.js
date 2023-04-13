@@ -28,16 +28,16 @@ function Hero(props) {
                     <div className='content'>{content}</div>
                     <div className='cta-ctn'>
                         <Button
-                            text='Artists'
+                            text='Roster'
                             outline={themeColor}
                             to='#artists'
                         />
-                        <Button
+                        {/* <Button
                             text='Businesses'
                             outline={themeColor}
                             to='#businesses'
 
-                        />
+                        /> */}
 
                     </div>
                 </div>
