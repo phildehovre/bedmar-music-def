@@ -10,7 +10,7 @@ function Features(props) {
 
     const renderFeatures = () => {
         return features.map((feature, i) => {
-            if (category === 'artists') {
+            if (category === 'roster') {
                 return (
                     <FeatureCard
                         feature={feature}

@@ -26,7 +26,7 @@ function Slogan(props) {
                             lg={!isSmallScreen}
                             bg=''
                         />
-                        <Button
+                        {/* <Button
                             color='white'
                             text='businesses'
                             outline={themeColor}
@@ -34,7 +34,7 @@ function Slogan(props) {
                             border='2'
                             lg={!isSmallScreen}
                             bg={secondary}
-                        />
+                        /> */}
                     </div>
                 </div>
             </Section>
