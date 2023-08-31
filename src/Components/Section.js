@@ -30,9 +30,10 @@ function Section(props) {
 
 
 
+
     return (
         <div className='section-ctn' id={id} style={sectionStyles}>
-            {title && <div className='title' style={textStyles}>{title}</div>}
+            {title && <div id='title' className='title' style={textStyles}>{title}</div>}
             {category && <h3 className='category' style={textStyles}>{category}</h3>}
             {subtitle && <div className='subtitle'>{subtitle}</div>}
             {children}

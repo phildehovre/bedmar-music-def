@@ -1,13 +1,13 @@
 import React from 'react'
 import Section from './Section'
 import Button from './Button'
-import { stylesVariables } from '../Styles/Variables'
+// import { stylesVariables } from '../Styles/Variables'
 import './Slogan.css'
 
 function Slogan(props) {
 
     const { content, themeColor, isSmallScreen } = props
-    const { secondary } = stylesVariables
+    // const { secondary } = stylesVariables
 
 
 
@@ -18,7 +18,7 @@ function Slogan(props) {
                     <div className='content' style={{ borderRight: `1px solid ${themeColor}` }}>{content}</div>
                     <div className='cta-ctn'>
                         <Button
-                            text='artists'
+                            text='roster'
                             outline={themeColor}
                             to='#artists'
                             color='white'

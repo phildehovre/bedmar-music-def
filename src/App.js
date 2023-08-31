@@ -8,9 +8,18 @@ import { stylesVariables } from './Styles/Variables';
 import './Styles/Global.css';
 import CookieConsent from "react-cookie-consent";
 import Privacy from './Components/Privacy'
+import { animate, timeline } from 'motion'
 
 
 function App() {
+
+  useEffect(() => {
+    animate('#vinyl', { rotate: [0, 360] }, { duration: 1, easing: 'linear', repeat: Infinity })
+    // timeline([
+    //   [animate('#vinyl', {x: [-1000, 75] }, { duration: 1, easing: 'ease-in-out' })],
+    //   [animate('#bedmar', {x: [1000, 0] }, { duration: 2, easing: 'ease-in-out' })],
+    // ])
+  })
 
   const { primaryText,
     // background
@@ -44,6 +53,7 @@ function App() {
   })
 
   useEffect(() => {
+    let timeOut = (Math.random() * 1000) + 750
     setTimeout(() => {
       setLoading(false)
     }, 1500)
@@ -93,8 +103,8 @@ function App() {
       </Router>
       <div className='loading-overlay' style={{ display: `${loading ? 'block' : 'none'}` }}>
         <div className='spinner-ctn'>
-          <div className='spinner-letter'></div>
-          <div className='spinner'></div>
+          <div id='bedmar' className='spinner-letter'></div>
+          <div  id='vinyl' className='spinner'></div>
         </div>
       </div>
     </div>

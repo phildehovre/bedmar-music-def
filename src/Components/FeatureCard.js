@@ -5,8 +5,6 @@ function FeatureCard(props) {
 
     const { isSmallScreen } = props
 
-
-
     const { name, img, imgLg, type, url
     } = props.feature
     const { id, textColor } = props

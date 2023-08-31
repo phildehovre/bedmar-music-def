@@ -1,9 +1,25 @@
-import React, { useState } from 'react'
+import React, { useState} from 'react'
 import Section from './Section'
 import Socials from './Socials'
 import './Feature2.css'
+// import { animate, inView, timeline, stagger} from 'motion'
 
 function Feature2(props) {
+
+    // useEffect(() => {
+    //     inView('.feature2-ctn', ({target}) => {console.log('in view')
+    //     timeline([
+    //         [
+
+    //             animate('#slide-ctn', {x: [100, 0]}, {duration: 1.5, easing: 'ease-out', })
+    //         ],
+    //         [
+
+    //             animate('#slide-title', {x: [-100, 0]}, {duration: 1.5, easing: 'ease-out', delay: stagger(1)})
+    //         ]
+    //     ])
+    // })
+    // }, []);
 
     const { themeColor, text, content, highlight, featureTitle, bgImg, isSmallScreen, tertiary } = props
 
@@ -12,14 +28,14 @@ function Feature2(props) {
         color: themeColor,
         borderBottom: `${isSmallScreen ? '1px solid ' + themeColor : ''}`,
         textAlign: 'left',
-        borderRight: `${isSmallScreen ? '' : '1px solid ' + themeColor}`
+        borderRight: `${isSmallScreen ? '' : '1px solid ' + themeColor}`,
     }
 
     return (
         <Section {...props}>
-            <div className='feature2-ctn'>
+            <div className='feature2-ctn' >
                 <div className='title-ctn'>
-                    <div className='title' style={styles}>{featureTitle}</div>
+                    <div className='title' id='slide-title'style={styles}>{featureTitle}</div>
 
                 </div>
                 {bgImg &&
@@ -75,7 +91,7 @@ function Feature2(props) {
                             </div>}
                         </div>
                     </div>}
-                <div className='content' style={{ color: text }}>{content}<> </>
+                <div className='content' id='slide-ctn'  style={{ color: text }}>{content}<> </>
                     <span style={{ color: themeColor }}>
                         {highlight}
                     </span>

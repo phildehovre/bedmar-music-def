@@ -2,6 +2,7 @@
 
 body {
     background-color: '#2E2E2E';
+    overflow-x: hidden;
 }
 
 * {
@@ -24,6 +25,21 @@ body {
     z-index: 100;
 }
 
+@media (max-width: 768px) {
+
+    .loading-overlay .spinner-ctn {
+        position: relative;
+        background-size: 75%;
+        background-position: center;
+        height: 15em;
+        width: 15em;
+        top: 50%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+}
+
 
 .loading-overlay .spinner-ctn {
     position: relative;
@@ -41,7 +57,7 @@ body {
     position: absolute;
     background-image: url('https://res.cloudinary.com/dtnif6mzm/image/upload/v1658304980/Bedmar%20Music/LOGO%20PARTS/9_txs9fo.png');
     background-size: cover;
-    top: 26%;
+    top: 50%;
     left: 15%;
     height: 8.5em;
     width: 8.5em;
@@ -58,7 +74,7 @@ body {
     background-position-y: -38px;
     height: 10em;
     width: 10em;
-    top: 50%;
+    top: 75%;
     left: 76.5%;
     transform: translate(-50%, -50%);
     background-image: url('https://res.cloudinary.com/dtnif6mzm/image/upload/v1657805594/Bedmar%20Music/LOGO%20PARTS/7_ca7xgg.png');
@@ -69,7 +85,7 @@ body {
 
 
 
-
+/* 
 @keyframes rotation {
     from {
         transform: rotate(0deg)
@@ -78,4 +94,4 @@ body {
     to {
         transform: rotate(360deg)
     }
-}
+} */
