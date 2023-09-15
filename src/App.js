@@ -8,7 +8,7 @@ import { stylesVariables } from './Styles/Variables';
 import './Styles/Global.css';
 import CookieConsent from "react-cookie-consent";
 import Privacy from './Components/Privacy'
-import { animate, timeline } from 'motion'
+import { animate} from 'motion'
 
 
 function App() {
