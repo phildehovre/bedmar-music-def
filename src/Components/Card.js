@@ -12,12 +12,22 @@ function Card(props) {
         color: themeColor
     }
 
+    const renderContent = () => {
+        if (content.split(' ').length > 1) {
+            return content.split(' ').map((word, i) => {
+                return <span key={i}>{word} </span>
+            })
+        }
+
+        return content
+    }
+
     return (<>
         <div className={`card-ctn ${hovering ? 'hover' : ''}`} style={styles}
             // onClick={() => { setIsHovering(!hovering) }}
             onMouseEnter={() => { setIsHovering(true) }}
             onMouseLeave={() => { setIsHovering(false) }}
-        >{content}
+        >{renderContent()}
         </div>
     </>
     )

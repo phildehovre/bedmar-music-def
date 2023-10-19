@@ -8,6 +8,8 @@
     text-transform: uppercase;
     text-align: left;
     transition: all 250ms ease-in-out;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-ctn.hover {
