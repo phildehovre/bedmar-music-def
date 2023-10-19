@@ -27,13 +27,13 @@ const ArtistsList = [
         url: 'https://michaelblackwell.co.uk/'
     },
     {
-        name: 'Nadia Sheikh',
+        name: 'Sonni Mills',
         type: 'Singer / Songwriter',
-        img: 'https://res.cloudinary.com/dtnif6mzm/image/upload/v1669028935/Bedmar%20Music/desktop/Nadia_z2hc4p.png',
-        imgLg: 'https://res.cloudinary.com/dtnif6mzm/image/upload/v1669028935/Bedmar%20Music/desktop/Nadia_z2hc4p.png',
+        img: 'https://res.cloudinary.com/dtnif6mzm/image/upload/v1697725120/Bedmar%20Music/SonniMills_j6ockg.png',
+        imgLg: 'https://res.cloudinary.com/dtnif6mzm/image/upload/v1697725120/Bedmar%20Music/SonniMills_j6ockg.png',
         desc: 'This is a description of the artist that is pictured behind this useless text',
         imgZoom: '100%',
-        url: 'https://www.nadiasheikh.com'
+        url: 'https://www.instagram.com/sonnimills/'
     },
     {
         name: 'Angus Parkin',
@@ -45,13 +45,13 @@ const ArtistsList = [
         url: 'https://www.angusparkinmusic.com/'
     },
     {
-        name: 'Sonni Mills',
-        type: 'Singer / Songwriter',
-        img: 'https://res.cloudinary.com/dtnif6mzm/image/upload/v1656595318/Bedmar%20Music/mobile/SonniMills_hyk2on.png',
-        imgLg: 'https://res.cloudinary.com/dtnif6mzm/image/upload/v1656595669/Bedmar%20Music/desktop/SonniMills_ksnacz.png',
+        name: 'Bonze',
+        type: 'Artist',
+        img: 'https://res.cloudinary.com/dtnif6mzm/image/upload/v1697725119/Bedmar%20Music/Bonze_dor298.png',
+        imgLg: 'https://res.cloudinary.com/dtnif6mzm/image/upload/v1697725119/Bedmar%20Music/Bonze_dor298.png',
         desc: 'This is a description of the artist that is pictured behind this useless text',
         imgZoom: '100%',
-        url: 'https://www.instagram.com/sonnimills/'
+        url: 'https://spotify.link/Rj8Q4RdF1Db'
     },
     {
         name: 'Ryan Johnston',
