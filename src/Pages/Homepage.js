@@ -51,10 +51,10 @@ function Homepage(props) {
                 themeColor={secondary}
                 cards={[
                     'artist management',
-                    'concert promotion',
+                    'Live promotion',
                     'digital marketing',
-                    'project management',
-                    'business operations',
+                    'campaign management',
+                    'artist services',
                     'creative services',
                 ]}
             />
