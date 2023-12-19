@@ -44,24 +44,24 @@ const ArtistsList = [
         imgZoom: '100%',
         url: 'https://www.angusparkinmusic.com/'
     },
-    {
-        name: 'Bonze',
-        type: 'Artist',
-        img: 'https://res.cloudinary.com/dtnif6mzm/image/upload/v1697725119/Bedmar%20Music/Bonze_dor298.png',
-        imgLg: 'https://res.cloudinary.com/dtnif6mzm/image/upload/v1697725119/Bedmar%20Music/Bonze_dor298.png',
-        desc: 'This is a description of the artist that is pictured behind this useless text',
-        imgZoom: '100%',
-        url: 'https://spotify.link/Rj8Q4RdF1Db'
-    },
-    {
-        name: 'Ryan Johnston',
-        type: 'Singer / Songwriter',
-        img: 'https://res.cloudinary.com/dtnif6mzm/image/upload/v1656595318/Bedmar%20Music/mobile/6_r6kaew.png',
-        imgLg: 'https://res.cloudinary.com/dtnif6mzm/image/upload/v1656595669/Bedmar%20Music/desktop/RyanJohnston_qp20mc.png',
-        desc: 'This is a description of the artist that is pictured behind this useless text',
-        imgZoom: '100%',
-        url: 'https://www.instagram.com/__ryanjohnston__/'
-    },
+    // {
+    //     name: 'Bonze',
+    //     type: 'Artist',
+    //     img: 'https://res.cloudinary.com/dtnif6mzm/image/upload/v1697725119/Bedmar%20Music/Bonze_dor298.png',
+    //     imgLg: 'https://res.cloudinary.com/dtnif6mzm/image/upload/v1697725119/Bedmar%20Music/Bonze_dor298.png',
+    //     desc: 'This is a description of the artist that is pictured behind this useless text',
+    //     imgZoom: '100%',
+    //     url: 'https://spotify.link/Rj8Q4RdF1Db'
+    // },
+    // {
+    //     name: 'Ryan Johnston',
+    //     type: 'Singer / Songwriter',
+    //     img: 'https://res.cloudinary.com/dtnif6mzm/image/upload/v1656595318/Bedmar%20Music/mobile/6_r6kaew.png',
+    //     imgLg: 'https://res.cloudinary.com/dtnif6mzm/image/upload/v1656595669/Bedmar%20Music/desktop/RyanJohnston_qp20mc.png',
+    //     desc: 'This is a description of the artist that is pictured behind this useless text',
+    //     imgZoom: '100%',
+    //     url: 'https://www.instagram.com/__ryanjohnston__/'
+    // },
 ]
 
 export default ArtistsList

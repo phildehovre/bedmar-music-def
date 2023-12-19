@@ -10,13 +10,11 @@
 @media (min-width: 1000px) {
     .feature-ctn {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
         max-width: 1200px;
-    }
-}
-
-@media (min-width: 1500px) {
-    .feature-ctn {
-        margin: auto
+        margin: 0 auto;
     }
 }
