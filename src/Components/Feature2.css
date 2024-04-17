@@ -69,11 +69,10 @@
     line-height: 1.1em;
     margin: auto;
     letter-spacing: .02em;
+    overflow: scroll;
     /* border: 1px solid red; */
 
 }
-
-
 
 
 .bio .p.dark {
