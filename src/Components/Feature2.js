@@ -2,6 +2,7 @@ import React, { useState} from 'react'
 import Section from './Section'
 import Socials from './Socials'
 import './Feature2.css'
+import { bio } from '../Assets/biography'
 // import { animate, inView, timeline, stagger} from 'motion'
 
 function Feature2(props) {
@@ -31,6 +32,18 @@ function Feature2(props) {
         borderRight: `${isSmallScreen ? '' : '1px solid ' + themeColor}`,
     }
 
+    const renderBio = () => {
+        return bio.split('.').map((sentence, index) => {
+            if (index % 2 != 0) {
+                return (
+                    <span key={sentence} class="bio-black">{sentence}.</span>
+                )
+            } else {
+                return <span key={sentence} class="bio-white">{sentence}.</span>
+            }
+        })
+    }
+
     return (
         <Section {...props}>
             <div className='feature2-ctn' >
@@ -48,33 +61,7 @@ function Feature2(props) {
                             onClick={() => { setHovering(!hovering) }}
                         >
                             {hovering && <div className='bio'>
-                                <span className='p white'>
-                                    Entrepreneur, professional violinist, artist manager, A&R and concert promoter, with previous experience in executive roles.
-                                </span>
-                                <br />
-                                <span>
-                                    Graduated in Business Management and Music Performance, Marta holds an MBA and a masters in Music Industry Management & Artist Development with Distinction at the University of West London.
-                                </span>
-                                <br />
-                                She gained valuable experience working as Assistant Manager for a
-                                <p>
-                                    <span className='p white'>
-                                        concert promoter and record label in Spain, after which she decided to continue developing her career in the UK
-                                    </span>
-                                    <span>
-                                        {` `}with roles in music management, live events, A&R, social media, marketing and business development.
-                                    </span>
-                                </p>
-                                <br />
-                                <p>
-                                    She’s worked with dozens of artists, including{` `}
-                                    <span className='p white'>
-                                        Billy Lockett, Elder Island, Sam Branson / Waves Rush In, RJ Thompson, Paco Montalvo{` `}
-                                    </span>
-                                    (Spain) and
-                                </p>
-                                hundreds of up and coming artists.
-                                <br />
+                                {renderBio()}
                                 <div style={{ padding: '1em 0 0 0' }}>
                                     <Socials
                                         color={tertiary}

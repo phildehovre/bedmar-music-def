@@ -71,6 +71,10 @@
     letter-spacing: .02em;
     /* border: 1px solid red; */
 
+    .bio-white {
+        color: white
+    }
+
 }
 
 
