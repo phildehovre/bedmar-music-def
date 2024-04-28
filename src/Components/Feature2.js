@@ -2,7 +2,6 @@ import React, { useState} from 'react'
 import Section from './Section'
 import Socials from './Socials'
 import './Feature2.css'
-import { bio } from '../Assets/bio'
 import Bio from './Bio'
 // import { animate, inView, timeline, stagger} from 'motion'
 
