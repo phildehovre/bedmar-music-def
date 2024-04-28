@@ -69,8 +69,17 @@
     line-height: 1.1em;
     margin: auto;
     letter-spacing: .02em;
-    overflow: scroll;
+    overflow: hidden;
     /* border: 1px solid red; */
+
+    p {
+        font-size: 1.2rem;
+        margin-bottom: .25rem;
+        
+        .bio-white {
+            color: white;
+        }
+    }
 
 }
 
