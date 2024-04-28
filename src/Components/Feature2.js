@@ -22,7 +22,7 @@ function Feature2(props) {
 
     const renderBio = () => {
         return bio.split('.').map((sentence, index) => {
-            if (index % 2 != 0) {
+            if (index % 2 !== 0) {
                 return (
                     <span key={sentence} class="bio-black">{sentence}.</span>
                 )

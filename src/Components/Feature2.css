@@ -61,7 +61,7 @@
     justify-content: center;
     position: absolute;
     z-index: 1;
-    font-size: .85em;
+    font-size: .75em;
     color: #2e2e2e;
     text-align: center;
     font-weight: 600;
@@ -88,6 +88,18 @@
     color: white;
 }
 
+@media (min-width: 430px) {
+    .bio {
+        font-size: .9em;
+    }
+
+}
+@media (min-width: 500px) {
+    .bio {
+        font-size: .85em;
+    }
+
+}
 @media (min-width: 1000px) {
     .feature2-ctn {
         display: grid;
@@ -132,7 +144,7 @@
 
     .bio {
         padding: 3em 4em;
-        font-size: 1.1em;
+        font-size: .9em;
     }
 
     .img-ctn {
@@ -142,18 +154,15 @@
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1100px) {
     .feature2-ctn {
         max-width: 1200px;
     }
-}
-
-
-@media (max-width: 1200px) {
     .bio {
-        font-size: .9em;
+        font-size: 1em;
     }
 }
+
 
 @media (min-width: 1500px) {
     .feature2-ctn {
@@ -161,6 +170,6 @@
     }
 
     .bio {
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
 }
