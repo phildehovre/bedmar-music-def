@@ -15,6 +15,10 @@ function Navbar(props) {
         target.scrollIntoView({ behavior: 'smooth' });
     }
 
+    const redirect = (url) => {
+        window.location.href = url
+    }
+
     const navRef = useRef()
 
     return (
@@ -26,11 +30,11 @@ function Navbar(props) {
             </Link>
             {!isSmallScreen && <>
                 <ul>
-                    <li onClick={() => { scrollToSection() }}>
-                        <Link className='navbar-link' to="/">Home</Link>
-                    </li>
                     <li onClick={() => { scrollToSection('#artists') }}>
                         <Link className='navbar-link' to="#artists">Roster</Link>
+                    </li>
+                    <li onClick={() => { redirect("https://bedmarmusic.com") }}>
+                        <a className='navbar-link' >Flexible MGMT</a>
                     </li>
                     {/* <li onClick={() => { scrollToSection('#businesses') }}>
                         <Link className='navbar-link' to="">Businesses</Link>

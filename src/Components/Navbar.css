@@ -8,7 +8,7 @@
     justify-content: space-between;
     background-color: transparent;
     align-items: center;
-    padding: 0 .4em;
+    /* padding: 0 .4em; */
     height: 3.5em;
     /* border: 1px solid red; */
 }
@@ -24,7 +24,7 @@
 
 .navbar-ctn ul li {
     display: flex;
-    width: clamp(2em, 10em, 10%);
+    /* width: clamp(2em, 10em, 10%); */
     justify-content: center;
 }
 
