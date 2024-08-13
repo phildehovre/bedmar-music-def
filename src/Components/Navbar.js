@@ -33,7 +33,7 @@ function Navbar(props) {
                     <li onClick={() => { scrollToSection('#artists') }}>
                         <Link className='navbar-link' to="#artists">Roster</Link>
                     </li>
-                    <li onClick={() => { redirect("https://bedmarmusic.com") }}>
+                    <li onClick={() => { redirect("/flexible-mgmt") }}>
                         <a className='navbar-link' >Flexible MGMT</a>
                     </li>
                     {/* <li onClick={() => { scrollToSection('#businesses') }}>

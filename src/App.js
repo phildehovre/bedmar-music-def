@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Homepage from './Pages/Homepage'
 import Footer from './Components/Footer'
 import Menu from './Components/Menu'
+import Loader from './Components/Loader'
 import { stylesVariables } from './Styles/Variables';
 import './Styles/Global.css';
 import CookieConsent from "react-cookie-consent";
@@ -82,6 +83,13 @@ function App() {
           <Route path='/' element={<Homepage
             isSmallScreen={isSmallScreen}
             isOpen={isOpen}
+          />}
+          >
+          </Route >
+          <Route path='/flexible-mgmt' element={<Loader
+            isSmallScreen={isSmallScreen}
+            isOpen={isOpen}
+            redirect={"https://bedmarmusic.com"}
           />}
           >
           </Route >
