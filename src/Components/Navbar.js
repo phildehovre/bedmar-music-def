@@ -43,18 +43,6 @@ function Navbar(props) {
             {!isSmallScreen && <>
                 <ul>
                     {renderLinks()}
-                    {/* <li onClick={() => { scrollToSection('#artists') }}>
-                        <Link className='navbar-link' to="#artists">Roster</Link>
-                    </li>
-                    <li onClick={() => { redirect("/flexible-mgmt") }}>
-                        <a className='navbar-link' >Flexible MGMT</a>
-                    </li>
-                    <li onClick={() => { scrollToSection('#about') }}>
-                        <Link className='navbar-link' to="">About</Link>
-                    </li>
-                    <li onClick={() => { scrollToSection('#contact') }}>
-                        <Link className='navbar-link' to="">Contact</Link>
-                    </li> */}
                 </ul>
                 <Socials
                     pro={true}
