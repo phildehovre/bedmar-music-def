@@ -3,6 +3,8 @@ import "./Navbar.css"
 import { Link } from 'react-router-dom'
 import Dropdown from './Dropdown'
 import Socials from './Socials'
+import { endpoints } from '../constants/nav'
+import { handleEndpointClick } from '../helpers/nav'
 // import { stylesVariables } from '../Styles/Variables';
 
 function Navbar(props) {
@@ -21,6 +23,16 @@ function Navbar(props) {
 
     const navRef = useRef()
 
+    const renderLinks = () => {
+        return endpoints.map(endpoint => {
+            return (
+                    <li onClick={() => handleEndpointClick(endpoint) }>
+                        <Link key={endpoint.label} className='navbar-link' to="">{endpoint.label}</Link>
+                    </li>
+            )
+        })
+    }
+
     return (
         <div className="navbar-ctn" ref={navRef}>
             <Link to='/'>
@@ -30,21 +42,19 @@ function Navbar(props) {
             </Link>
             {!isSmallScreen && <>
                 <ul>
-                    <li onClick={() => { scrollToSection('#artists') }}>
+                    {renderLinks()}
+                    {/* <li onClick={() => { scrollToSection('#artists') }}>
                         <Link className='navbar-link' to="#artists">Roster</Link>
                     </li>
                     <li onClick={() => { redirect("/flexible-mgmt") }}>
                         <a className='navbar-link' >Flexible MGMT</a>
                     </li>
-                    {/* <li onClick={() => { scrollToSection('#businesses') }}>
-                        <Link className='navbar-link' to="">Businesses</Link>
-                    </li> */}
                     <li onClick={() => { scrollToSection('#about') }}>
                         <Link className='navbar-link' to="">About</Link>
                     </li>
                     <li onClick={() => { scrollToSection('#contact') }}>
                         <Link className='navbar-link' to="">Contact</Link>
-                    </li>
+                    </li> */}
                 </ul>
                 <Socials
                     pro={true}

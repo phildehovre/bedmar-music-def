@@ -1,27 +1,32 @@
 import React from 'react'
 import './DropdownMenu.css'
 import './Dropdown.css'
+import { endpoints } from '../constants/nav'
+import { handleEndpointClick } from '../helpers/nav'
 
 const DropdownMenu = (props) => {
 
     const { isOpen , isSmallScreen} = props
 
+    const renderLinks = () => {
+        return endpoints.map(
+            endpoint => {
+                return (
+                    <li 
+                    style={{...endpoint.styles, cursor: "pointer"}} 
+                    key={endpoint.label} 
+                    onClick={() => handleEndpointClick(endpoint)}>{endpoint.label}</li>
 
-    const scrollToSection = (section) => {
-        let target = document.querySelector(section)
-        target.scrollIntoView();
+                )
+            }
+        )
     }
-
-
 
     return (<>
         <div className={`dropdownmenu-ctn ${!isOpen ? 'closed' : 'open'}`}>
             {isOpen && isSmallScreen &&
                 <div className={`dropdown${isOpen ? ' open' : ''} `}>
-                    <li style={{ color: '#BCA37D', cursor: "pointer" }}  onClick={() => { window.location.href="/flexible-mgmt"}}>Flexible MGMT</li>
-                    <li onClick={() => { scrollToSection('#artists') }}>Roster</li>
-                    <li onClick={() => { scrollToSection('#about') }}>About</li>
-                    <li onClick={() => { scrollToSection('#contact') }}>Contact</li>
+                {renderLinks()}
                 </div>
             }
         </div>
