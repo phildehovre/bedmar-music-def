@@ -2,8 +2,7 @@
     text-transform: uppercase;
     background-color: transparent;
     color: white;
-    height: 3em;
-    overflow-x: scroll;
+    overflow-x: hidden;
     display: flex;
     justify-content: space-between;
     transition: transform 250ms linear;
@@ -12,8 +11,10 @@
 
 .dropdownmenu-ctn {
     position: absolute;
+    width: 100%;
     transition: all 250ms linear;
     transform: translateY(200%);
+    justify-content: space-between;
 }
 
 
@@ -23,8 +24,8 @@
     transition: transform 250ms linear;
 }
 
-.dropdownmenu-ctn li {
-    font-size: larger;
+.dropdown {
+    display: flex;
     padding: 0 1em;
-    margin: 0 .5em;
+    justify-content: space-between;
 }

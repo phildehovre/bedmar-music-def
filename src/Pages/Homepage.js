@@ -1,5 +1,5 @@
 import React from 'react'
-import Hero from '../Components/Hero'
+import PageLoader from '../Components/PageLoader'
 import Feature from '../Components/Feature'
 import Feature2 from '../Components/Feature2'
 import About from '../Components/About'
@@ -28,8 +28,8 @@ function Homepage(props) {
 
     return (
         <>
-            <DropdownMenu isOpen={isOpen} />
-            <Hero
+            <DropdownMenu isOpen={isOpen} isSmallScreen={isSmallScreen}/>
+            <PageLoader
                 height='85vh'
                 bg=''
                 bgImage='https://res.cloudinary.com/dtnif6mzm/image/upload/v1656334495/Bedmar%20Music/pexels-wendy-wei-1916824_sj6add.jpg'

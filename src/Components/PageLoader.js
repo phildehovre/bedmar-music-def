@@ -3,7 +3,7 @@ import Section from './Section'
 import Button from './Button'
 import './Hero.css'
 
-function Hero(props) {
+function PageLoader(props) {
 
     const { content, themeColor } = props
     const [animate, setAnimate] = useState(true)
@@ -20,7 +20,7 @@ function Hero(props) {
         <Section
             {...props}
         >
-            <div className='hero-ctn'>
+            <div className='page_loader-ctn'>
                 <div className='tagline-ctn'>
                     <div className='title'>Bedmar Music</div>
                     <div className={`visual-element ${animate ? 'animate' : ''}`} style={{ backgroundColor: themeColor }}></div>
@@ -46,4 +46,4 @@ function Hero(props) {
     )
 }
 
-export default Hero
+export default PageLoader 

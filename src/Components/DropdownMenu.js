@@ -4,9 +4,8 @@ import './Dropdown.css'
 
 const DropdownMenu = (props) => {
 
-    const { isOpen } = props
+    const { isOpen , isSmallScreen} = props
 
-    console.log(isOpen)
 
     const scrollToSection = (section) => {
         let target = document.querySelector(section)
@@ -17,11 +16,10 @@ const DropdownMenu = (props) => {
 
     return (<>
         <div className={`dropdownmenu-ctn ${!isOpen ? 'closed' : 'open'}`}>
-            {isOpen &&
+            {isOpen && isSmallScreen &&
                 <div className={`dropdown${isOpen ? ' open' : ''} `}>
-                    <li style={{ color: '#BCA37D' }} onClick={() => { scrollToSection('#home') }}>Home</li>
+                    <li style={{ color: '#BCA37D', cursor: "pointer" }}  onClick={() => { window.location.href="/flexible-mgmt"}}>Flexible MGMT</li>
                     <li onClick={() => { scrollToSection('#artists') }}>Roster</li>
-                    {/* <li onClick={() => { scrollToSection('#businesses') }}>Businesses</li> */}
                     <li onClick={() => { scrollToSection('#about') }}>About</li>
                     <li onClick={() => { scrollToSection('#contact') }}>Contact</li>
                 </div>

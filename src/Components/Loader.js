@@ -1,6 +1,6 @@
 import React from 'react'
 import { useEffect } from 'react'
-import Hero from './Hero'
+import PageLoader from './PageLoader'
 
 function Loader(props) {
   const {secondary, primaryText, redirect} =props
@@ -13,7 +13,7 @@ useEffect(() => {
 
 
   return (
-               <Hero
+               <PageLoader
                 height='85vh'
                 bg=''
                 bgImage='https://res.cloudinary.com/dtnif6mzm/image/upload/v1656334495/Bedmar%20Music/pexels-wendy-wei-1916824_sj6add.jpg'

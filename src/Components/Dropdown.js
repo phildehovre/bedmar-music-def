@@ -7,7 +7,7 @@ import './Dropdown.css'
 
 function Dropdown(props) {
 
-    const { text, bg, handleOpen } = props
+    const { text, bg, handleOpen, isSmallScreen } = props
 
     // const [isOpen, setIsOpen] = useState(false)
 
